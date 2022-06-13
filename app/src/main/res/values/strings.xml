@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Simulator</string>
-    <string name="txt_simulate">Match simulator button</string>
+    <string name="cd_simulate">Match simulator button</string>
+    <string name="cd_image_team_home">Team home image</string>
 </resources>

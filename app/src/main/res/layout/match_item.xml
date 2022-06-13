@@ -10,17 +10,18 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/ivTeamHome"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/imagem_do_time_da_casa" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/ivTeamOther"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginTop="16dp"
@@ -30,57 +31,57 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvTeamHomeName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:text="TextView"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintEnd_toEndOf="@+id/ivTeamHome"
+            app:layout_constraintStart_toStartOf="@+id/ivTeamHome"
+            app:layout_constraintTop_toBottomOf="@+id/ivTeamHome" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvTeamOtherName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="TextView"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2"
-            app:layout_constraintStart_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintEnd_toEndOf="@+id/ivTeamOther"
+            app:layout_constraintStart_toStartOf="@+id/ivTeamOther"
+            app:layout_constraintTop_toBottomOf="@+id/ivTeamOther" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvTeamHomeScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="2"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivTeamHome"
+            app:layout_constraintStart_toEndOf="@+id/ivTeamHome"
+            app:layout_constraintTop_toTopOf="@+id/ivTeamHome" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvTeamOtherScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:text="2"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivTeamOther"
+            app:layout_constraintEnd_toStartOf="@+id/ivTeamOther"
+            app:layout_constraintTop_toTopOf="@+id/ivTeamOther" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvVersus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="X"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toStartOf="@+id/textView4"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintBottom_toBottomOf="@+id/ivTeamHome"
+            app:layout_constraintEnd_toStartOf="@+id/tvTeamOtherScore"
+            app:layout_constraintStart_toEndOf="@+id/tvTeamHomeScore"
+            app:layout_constraintTop_toTopOf="@+id/ivTeamHome" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
